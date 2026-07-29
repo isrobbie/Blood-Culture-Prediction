@@ -1,0 +1,153 @@
+SpecialtyCode,SpecialtyName,BundleCategory,Notes
+0,Unknown,Others,No specialty code recorded
+100,General Surgery,Acute and general surgery,General surgery
+101,Urology,Acute and general surgery,Urology bundled with general surgery
+102,Transplantation Surgery,Surgical subspecialty,Transplantation surgery
+103,Breast Surgery,Surgical subspecialty,Breast surgery
+104,Colorectal Surgery,Surgical subspecialty,Colorectal surgery
+105,Hepatobiliary & Pancreatic Surgery,Surgical subspecialty,Hepatobiliary & pancreatic surgery
+106,Upper Gastrointestinal Surgery,Surgical subspecialty,Upper GI surgery
+107,Vascular Surgery,Acute and general surgery,Vascular surgery bundled with general surgery
+108,Spinal Surgery Service,Surgical subspecialty,Spinal surgery
+109,Bariatric Surgery Service,Surgical subspecialty,Bariatric surgery
+110,Trauma & Orthopaedics,Trauma and orthopedics,Trauma and orthopaedics - separate category
+111,Orthopaedic Service,Trauma and orthopedics,Orthopaedic service
+113,Endocrine Surgery Service,Surgical subspecialty,Endocrine surgery
+115,Trauma Surgery Service,Trauma and orthopedics,Trauma surgery service
+120,ENT,Surgical subspecialty,Ear nose and throat
+130,Ophthalmology,Surgical subspecialty,Ophthalmology
+140,Oral Surgery,Surgical subspecialty,Oral surgery
+141,Restorative Dentistry,Surgical subspecialty,Restorative dentistry
+142,Paediatric Dentistry,Surgical subspecialty,Paediatric dentistry
+143,Orthodontics,Surgical subspecialty,Orthodontics
+144,Maxillo-Facial Surgery,Surgical subspecialty,Maxillo-facial surgery
+145,Oral and Maxillofacial Surgery Service,Surgical subspecialty,Oral and maxillofacial surgery service
+150,Neurosurgery,Surgical subspecialty,Neurosurgery
+160,Plastic Surgery,Surgical subspecialty,Plastic surgery
+161,Burns Care,Surgical subspecialty,Burns care
+170,Cardiothoracic Surgery,Surgical subspecialty,Cardiothoracic surgery
+171,Paediatric Surgery,Paediatrics,Paediatric surgery
+172,Cardiac Surgery,Surgical subspecialty,Cardiac surgery
+173,Thoracic Surgery,Surgical subspecialty,Thoracic surgery
+174,Cardiothoracic Transplantation,Surgical subspecialty,Cardiothoracic transplantation
+180,Accident & Emergency,Accident & Emergency,Accident and emergency
+190,Anaesthetics,Surgical subspecialty,Anaesthetics
+191,Pain Management,Surgical subspecialty,Pain management
+192,Critical Care Medicine,Critical care,Critical care medicine
+200,Aviation and Space Medicine Service,Others,Aviation and space medicine
+211,Paediatric Urology,Paediatrics,Paediatric urology
+212,Paediatric Transplantation Surgery,Paediatrics,Paediatric transplantation surgery
+213,Paediatric Gastrointestinal Surgery,Paediatrics,Paediatric gastrointestinal surgery
+214,Paediatric Trauma and Orthopaedics,Paediatrics,Paediatric trauma and orthopaedics
+215,Paediatric Ear Nose and Throat,Paediatrics,Paediatric ENT
+216,Paediatric Ophthalmology,Paediatrics,Paediatric ophthalmology
+217,Paediatric Maxillo-Facial Surgery,Paediatrics,Paediatric maxillo-facial surgery
+218,Paediatric Neurosurgery,Paediatrics,Paediatric neurosurgery
+219,Paediatric Plastic Surgery,Paediatrics,Paediatric plastic surgery
+220,Paediatric Burns Care,Paediatrics,Paediatric burns care
+221,Paediatric Cardiac Surgery,Paediatrics,Paediatric cardiac surgery
+222,Paediatric Thoracic Surgery,Paediatrics,Paediatric thoracic surgery
+230,Paediatric Clinical Pharmacology Service,Paediatrics,Paediatric clinical pharmacology
+240,Paediatric Palliative Medicine Service,Paediatrics,Paediatric palliative medicine
+241,Paediatric Pain Management,Paediatrics,Paediatric pain management
+242,Paediatric Intensive Care,Paediatrics,Paediatric intensive care
+250,Paediatric Hepatology Service,Paediatrics,Paediatric hepatology
+251,Paediatric Gastroenterology,Paediatrics,Paediatric gastroenterology
+252,Paediatric Endocrinology,Paediatrics,Paediatric endocrinology
+253,Paediatric Clinical Haematology,Paediatrics,Paediatric clinical haematology
+254,Paediatric Audiological Medicine,Paediatrics,Paediatric audiological medicine
+255,Paediatric Clinical Immunology and Allergy,Paediatrics,Paediatric clinical immunology and allergy
+256,Paediatric Infectious Diseases,Paediatrics,Paediatric infectious diseases
+257,Paediatric Dermatology,Paediatrics,Paediatric dermatology
+258,Paediatric Respiratory Medicine,Paediatrics,Paediatric respiratory medicine
+259,Paediatric Nephrology,Paediatrics,Paediatric nephrology
+260,Paediatric Medical Oncology,Paediatrics,Paediatric medical oncology
+261,Paediatric Metabolic Disease,Paediatrics,Paediatric metabolic disease
+262,Paediatric Rheumatology,Paediatrics,Paediatric rheumatology
+263,Paediatric Diabetic Medicine,Paediatrics,Paediatric diabetic medicine
+264,Paediatric Cystic Fibrosis,Paediatrics,Paediatric cystic fibrosis
+270,Paediatric Emergency Medicine Service,Paediatrics,Paediatric emergency medicine
+280,Paediatric Interventional Radiology,Paediatrics,Paediatric interventional radiology
+300,General Medicine,General (acute) medicine,General internal medicine - kept separate
+301,Gastroenterology,Medical subspecialty,Gastroenterology
+302,Endocrinology,Medical subspecialty,Endocrinology (includes diabetes)
+303,Clinical Haematology,Medical subspecialty,Clinical haematology
+304,Clinical Physiology,Medical subspecialty,Clinical physiology
+305,Clinical Pharmacology,Medical subspecialty,Clinical pharmacology
+306,Hepatology,Medical subspecialty,Hepatology
+307,Diabetic Medicine,Medical subspecialty,Diabetic medicine
+308,Blood and Marrow Transplantation,Medical subspecialty,Blood and marrow transplantation
+309,Haemophilia,Medical subspecialty,Haemophilia
+310,Audiological Medicine,Medical subspecialty,Audiological medicine
+311,Clinical Genetics,Medical subspecialty,Clinical genetics
+313,Clinical Immunology and Allergy,Medical subspecialty,Clinical immunology and allergy - CORRECTED
+314,Rehabilitation,Medical subspecialty,Rehabilitation
+315,Palliative Medicine,Medical subspecialty,Palliative medicine
+316,Clinical Immunology,Medical subspecialty,Clinical immunology
+317,Allergy,Medical subspecialty,Allergy
+318,Intermediate Care,Medical subspecialty,Intermediate care
+319,Respite Care,Medical subspecialty,Respite care
+320,Cardiology,Medical subspecialty,Cardiology
+321,Paediatric Cardiology,Medical subspecialty,Paediatric cardiology
+322,Clinical Microbiology,Medical subspecialty,Clinical microbiology
+323,Spinal Injuries,Medical subspecialty,Spinal injuries
+324,Anticoagulant Service,Medical subspecialty,Anticoagulant service
+325,Sport and Exercise Medicine,Medical subspecialty,Sport and exercise medicine
+326,General Medicine,Medical subspecialty,Acute internal medicine service merged with General Medicine
+327,Cardiac Rehabilitation,Medical subspecialty,Cardiac rehabilitation
+328,Stroke Medicine,Medical subspecialty,Stroke medicine
+329,Transient Ischaemic Attack,Medical subspecialty,Transient ischaemic attack
+330,Dermatology,Medical subspecialty,Dermatology
+333,Rare Disease Service,Medical subspecialty,Rare disease service
+335,Inherited Metabolic Medicine Service,Medical subspecialty,Inherited metabolic medicine
+340,Thoracic Medicine,Medical subspecialty,Thoracic medicine - CORRECTED from Respiratory Medicine
+341,Respiratory Physiology,Medical subspecialty,Respiratory physiology
+342,Programmed Pulmonary Rehabilitation,Medical subspecialty,Programmed pulmonary rehabilitation
+343,Adult Cystic Fibrosis,Medical subspecialty,Adult cystic fibrosis
+347,Sleep Medicine Service,Medical subspecialty,Sleep medicine service
+348,Post-COVID-19 Syndrome Service,Medical subspecialty,Post-COVID-19 syndrome service
+350,Infectious Diseases,Medical subspecialty,Infectious diseases
+352,Tropical Medicine,Medical subspecialty,Tropical medicine
+361,Nephrology,Medical subspecialty,Nephrology - CORRECTED from Renal Medicine
+370,Medical Oncology,Medical subspecialty,Medical oncology
+371,Nuclear Medicine,Medical subspecialty,Nuclear medicine
+400,Neurology,Medical subspecialty,Neurology
+401,Clinical Neurophysiology,Medical subspecialty,Clinical neurophysiology
+410,Rheumatology,Medical subspecialty,Rheumatology
+420,Paediatrics,Paediatrics,Paediatrics general
+421,Paediatric Neurology,Paediatrics,Paediatric neurology
+422,Neonatology,Paediatrics,Neonatology
+430,Geriatric Medicine,Medical subspecialty,Geriatric medicine - bundled with medical subspecialty
+431,Orthogeriatric Medicine Service,Medical subspecialty,Orthogeriatric medicine service
+450,Dental Medicine Specialties,Others,Dental medicine specialties - CORRECTED
+451,Special Care Dentistry Service,Others,Special care dentistry service
+460,Medical Ophthalmology,Medical subspecialty,Medical ophthalmology
+461,Ophthalmic and Vision Science Service,Medical subspecialty,Ophthalmic and vision science service
+501,Obstetrics,Obstetrics,Obstetrics
+502,Gynaecology,Obstetrics,Gynaecology
+503,Gynaecological Oncology,Obstetrics,Gynaecological oncology
+505,Fetal Medicine Service,Obstetrics,Fetal medicine service
+560,Midwifery,Obstetrics,Midwifery
+663,Podiatric Surgery,Surgical subspecialty,Podiatric surgery
+670,Urological Physiology Service,Others,Urological physiology service
+673,Vascular Physiology Service,Others,Vascular physiology service
+675,Cardiac Physiology Service,Others,Cardiac physiology service
+677,Gastrointestinal Physiology Service,Others,Gastrointestinal physiology service
+710,Adult Mental Illness,Others,Adult mental illness
+713,Medical Psychotherapy,Others,Medical psychotherapy
+715,Old Age Psychiatry,Others,Old age psychiatry
+800,Medical Oncology,Others,Clinical oncology merged with Medical Oncology
+810,Radiology,Others,Radiology
+811,Interventional Radiology,Others,Interventional radiology
+812,Diagnostic Imaging,Others,Diagnostic imaging
+821,Blood Transfusion,Others,Blood transfusion
+822,Chemical Pathology,Others,Chemical pathology - CORRECTED
+823,Clinical Haematology,Others,Haematology merged with Clinical Haematology
+824,Histopathology,Others,Histopathology
+830,Immunopathology,Others,Immunopathology
+833,Medical Microbiology,Others,Medical microbiology
+834,Medical Virology,Others,Medical virology - CORRECTED
+900,Community Medicine,Others,Community medicine
+904,Public Health Dental,Others,Public health dental
+950,Nursing,Others,Nursing
+960,Allied Health Professional,Others,Allied health professional

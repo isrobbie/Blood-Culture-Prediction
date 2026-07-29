@@ -1,0 +1,14 @@
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.DS_Store
+
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Generated outputs from running the pipeline (not shipped in the repo)
+/Output Files/
+/Models/
