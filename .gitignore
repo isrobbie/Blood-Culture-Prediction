@@ -9,6 +9,14 @@ __pycache__/
 venv/
 .venv/
 
+# Raw/derived data (patient-level) - never commit. Deny-by-default: only the
+# small aggregate lookup tables in 00_Data are allowlisted.
+/Input Files/
+*.csv
+!/00_Data/lookup_tables/*.csv
+
 # Generated outputs from running the pipeline (not shipped in the repo)
 /Output Files/
 /Models/
+*.xlsx
+*.rds

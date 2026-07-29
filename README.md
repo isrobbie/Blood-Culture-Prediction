@@ -31,11 +31,8 @@ Patient-level data (IORD, an NHS research database subject to governance approva
 
 ## Setup
 
-R 4.3+ with the packages below (also listed in `install_packages.R`):
-
-```r
-source("install_packages.R")
-```
+R 4.3+. Package dependencies are declared via `library()` calls at the top of each script; install as needed:
+`data.table`, `dplyr`, `tidyr`, `purrr`, `stringr`, `lubridate`, `xgboost`, `mgcv`, `pROC`, `PRROC`, `ggplot2`, `patchwork`, `writexl`, `openxlsx`.
 
 ## Cite
 
@@ -48,7 +45,3 @@ source("install_packages.R")
   doi={10.1101/2026.07.17.26358320}
 }
 ```
-
-## License
-
-MIT (see `LICENSE`). This covers the code only; the underlying patient data are governed separately by IORD.
