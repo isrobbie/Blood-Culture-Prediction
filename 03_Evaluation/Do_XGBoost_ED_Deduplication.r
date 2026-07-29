@@ -138,5 +138,4 @@ ed_pat <- ed_test[, .SD[1L], by = ClusterID]
 res[[4]] <- evaluate(ed_pat, "Per-patient")
 
 summary_dt <- rbindlist(res)
-print(summary_dt)
 fwrite(summary_dt, file.path(csv_dir, "ed_cohort_approach_comparison.csv"))
