@@ -20,18 +20,14 @@ Bloodstream infections are a major cause of mortality, yet blood cultures have l
 │   └── main_nbc_pipeline      # Cohort: admissions without a culture (NBC_1 .. NBC_8)
 ├── 02_Models                  # XGBoost, BAM and GramPredict model training
 ├── 03_Evaluation              # Bootstrap CIs, subgroup/strict-cohort checks, model comparison
-├── 04_Report                  # Figure-generating scripts (ROC/calibration, SHAP, DCA/reallocation)
-└── 05_Deployment
-    └── external_validation_package  # Self-contained package to apply the trained model to a new site
+└── 04_Report                  # Generate_Figures.r produces Figures 1-3
 ```
 
 Each pipeline stage reads the previous stage's output and writes to `Output Files/CSVs/...`; run scripts in numeric order from the repo root. Paths in scripts are relative to the repo root.
 
 ## Data
 
-Patient-level data (IORD, an NHS research database subject to governance approval) are not included and cannot be made public. Scripts here operate on de-identified extracts with the column names referenced throughout the code; see the manuscript Methods and `05_Deployment/external_validation_package/Data_Dictionary/` for feature definitions. Data are available on reasonable request via IORD, subject to approval (see manuscript for details).
-
-Free-text antibiotic indications are classified into infection-source categories using a fine-tuned Bio+ClinicalBERT model (`05_Deployment/external_validation_package/Use_Code/Classify_Indications_BERT.py`) rather than being distributed as text, to avoid releasing clinical free text.
+Patient-level data (IORD, an NHS research database subject to governance approval) are not included and cannot be made public. Scripts here operate on de-identified extracts with the column names referenced throughout the code; see the manuscript Methods for feature definitions. Data are available on reasonable request via IORD, subject to approval (see manuscript for details).
 
 ## Setup
 
@@ -40,12 +36,6 @@ R 4.3+ with the packages below (also listed in `install_packages.R`):
 ```r
 source("install_packages.R")
 ```
-
-Model deployment/inference additionally needs Python with `torch`, `transformers`, `datasets`, `tqdm`, `pandas` (see header of `Classify_Indications_BERT.py`).
-
-## Applying the trained model elsewhere
-
-`05_Deployment/external_validation_package/` is self-contained: it holds the trained XGBoost model, Platt calibration coefficients, feature data dictionary and the code used to apply the model and analyse results (as done for the UCLH external validation). Start from `Use_Code/Apply_XGBoost.r`.
 
 ## Cite
 
