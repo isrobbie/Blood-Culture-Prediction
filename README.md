@@ -17,22 +17,45 @@ Bloodstream infections are a major cause of mortality, yet blood cultures have l
 ├── 00_Data                    # Lookup/reference tables (no patient data)
 ├── 01_Preprocessing
 │   ├── main_bc_pipeline       # Cohort: blood cultures taken (BC_1 .. BC_8)
+│   ├── front_door_pipeline    # Same cohort with front-door time windows (Trial_BC_5 .. 8)
 │   └── main_nbc_pipeline      # Cohort: admissions without a culture (NBC_1 .. NBC_8)
 ├── 02_Models                  # XGBoost, BAM and GramPredict model training
-├── 03_Evaluation              # Bootstrap CIs, subgroup/strict-cohort checks, model comparison
-└── 04_Report                  # Generate_Figures.r produces Figures 1-3
+├── 03_Evaluation              # Bootstrap CIs, subgroup, SHAP, front-door and deduplication analyses
+├── 04_Report                  # Generate_Figures.r produces Figures 1-3
+└── run_all.R                  # Runs every stage in order
 ```
-
-Each pipeline stage reads the previous stage's output and writes to `Output Files/CSVs/...`; run scripts in numeric order from the repo root. Paths in scripts are relative to the repo root.
 
 ## Data
 
-Patient-level data (IORD, an NHS research database subject to governance approval) are not included and cannot be made public. Scripts here operate on de-identified extracts with the column names referenced throughout the code; see the manuscript Methods for feature definitions. Data are available on reasonable request via IORD, subject to approval (see manuscript for details).
+Patient-level data (IORD, an NHS research database subject to governance approval) are not included and cannot be made public. Data are available to researchers whose proposal meets IORD's ethical and governance requirements, under a data access agreement (see manuscript Data sharing statement).
+
+The pipeline expects the IORD extract in `Input Files/IORD CSVs/` (file names as referenced in `BC_1`–`BC_8` and `NBC_1`–`NBC_8`) and the BERT-classified antibiotic indications in `Input Files/bert_classified_indications_update.csv`. Variable definitions are in Supplementary Table 2b.
+
+The trained XGBoost model and Platt calibration are available from the authors on request.
 
 ## Setup
 
-R 4.3+. Package dependencies are declared via `library()` calls at the top of each script; install as needed:
-`data.table`, `dplyr`, `tidyr`, `purrr`, `stringr`, `lubridate`, `xgboost`, `mgcv`, `pROC`, `PRROC`, `ggplot2`, `patchwork`, `writexl`, `openxlsx`.
+R 4.3+ with:
+`data.table`, `dplyr`, `tidyr`, `purrr`, `stringr`, `lubridate`, `xgboost`, `mgcv`, `pROC`, `PRROC`, `ggplot2`, `patchwork`, `writexl`, `openxlsx`, `SHAPforxgboost`.
+
+## Reproducing the results
+
+From the repo root, with the IORD extract in place:
+
+```
+Rscript run_all.R
+```
+
+This runs preprocessing, model training, evaluation and figures in order. Outputs are written to `Output Files/` and models to `Models/`.
+
+| Output | Script |
+|---|---|
+| Table 2, Figure 1 | `02_Models/Do_XGBoost_FullCohort.r`, `04_Report/Generate_Figures.r` |
+| BAM comparison | `02_Models/Do_BAM_FullCohort.r`, `03_Evaluation/Model_Comparison_BAM_vs_XGBoost.r` |
+| Figure 2, Supplementary Table 8 (SHAP) | `04_Report/Generate_Figures.r`, `03_Evaluation/Do_XGBoost_SHAP_Consistency.r` |
+| Front-door analysis | `01_Preprocessing/front_door_pipeline`, `03_Evaluation/Do_Evaluate_MainModel_on_StrictCohort.r` |
+| Figure 3, Table 3 (reallocation) | `02_Models/NBC_9_Apply_Model.r`, `03_Evaluation/NBC_10_Reallocation_Analysis.r` |
+| Supplementary Table 9 (subgroups, completeness, confusion matrices) | `03_Evaluation/Do_XGBoost_Supp_Subgroup_Tables.r` |
 
 ## Cite
 
